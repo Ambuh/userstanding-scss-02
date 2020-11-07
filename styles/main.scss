@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,400&display=swap');
+
+@mixin padding {
+    padding: 10px 16px;
+}
+
+body,html{
+    padding:0px;
+    margin:0px;
+    font-family: 'Nunito', sans-serif;
+
+    section{
+        width:100vw;//this is to fill the whole screen
+        min-height: 100vh; //this is to allow an overflow of content (scrolling)
+        display: grid;
+        place-items: center;
+        justify-content: center;
+        align-items: center;//This is to allow a centred UI for the form
+        background-image: linear-gradient(62deg, rgba(213, 145, 167, 0.5) 0%, rgba(213, 145, 167, 0.5) 12.5%,rgba(202, 136, 176, 0.5) 12.5%, rgba(202, 136, 176, 0.5) 25%,rgba(190, 126, 186, 0.5) 25%, rgba(190, 126, 186, 0.5) 37.5%,rgba(179, 117, 195, 0.5) 37.5%, rgba(179, 117, 195, 0.5) 50%,rgba(167, 107, 205, 0.5) 50%, rgba(167, 107, 205, 0.5) 62.5%,rgba(156, 98, 214, 0.5) 62.5%, rgba(156, 98, 214, 0.5) 75%,rgba(144, 88, 224, 0.5) 75%, rgba(144, 88, 224, 0.5) 87.5%,rgba(133, 79, 233, 0.5) 87.5%, rgba(133, 79, 233, 0.5) 100%),linear-gradient(152deg, rgb(223, 122, 10) 0%, rgb(223, 122, 10) 12.5%,rgb(207, 106, 23) 12.5%, rgb(207, 106, 23) 25%,rgb(191, 89, 35) 25%, rgb(191, 89, 35) 37.5%,rgb(175, 73, 48) 37.5%, rgb(175, 73, 48) 50%,rgb(158, 56, 61) 50%, rgb(158, 56, 61) 62.5%,rgb(142, 40, 74) 62.5%, rgb(142, 40, 74) 75%,rgb(126, 23, 86) 75%, rgb(126, 23, 86) 87.5%,rgb(110, 7, 99) 87.5%, rgb(110, 7, 99) 100%);
+        form{
+            width: 40%;
+            padding:1% 3px;
+            background-color: white;
+            .terms{
+                width:80%;
+                float: left;
+                input,p{
+                    float: left;
+                }
+                p{
+                    width: 80%;
+                    margin: 0px;
+                    padding: 0px;
+                }
+                input{
+                    width: 10%;
+                }
+                a{
+                    color:blue;
+                }
+            }
+            .app-left{
+                width: 100%;
+                float: left;
+                margin:3px 0px;
+                padding: 0 1%;
+                label{
+                    float: left;
+                    width:100%;
+                    margin-bottom: 2px;;
+                }
+                input[type='text']{
+                    padding:10px 2px;
+                    border:1px solid #bbb;
+                    border-radius: 4px;
+                    width: 90%;
+                    margin-bottom: 5px;
+                    &:focus{
+                        box-shadow: 0px 0px 4px #bbb;
+                    }
+                }
+            }
+            span{
+                width:100%;
+                height: 30px;
+                float: left;
+            }
+            nav{
+                width: 93%;
+
+                button{
+                    float: right;
+                    @include padding();
+                    border-radius: 4px;
+                    border: 1px solid #bbb;
+                    &:hover{
+                        background-color: aqua;
+                    }
+                }
+            }
+        }
+    }
+    
+
+}

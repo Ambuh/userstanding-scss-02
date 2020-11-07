@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,400&display=swap");
+body, html {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Nunito', sans-serif;
+}
+
+body section, html section {
+  width: 100vw;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: linear-gradient(62deg, rgba(213, 145, 167, 0.5) 0%, rgba(213, 145, 167, 0.5) 12.5%, rgba(202, 136, 176, 0.5) 12.5%, rgba(202, 136, 176, 0.5) 25%, rgba(190, 126, 186, 0.5) 25%, rgba(190, 126, 186, 0.5) 37.5%, rgba(179, 117, 195, 0.5) 37.5%, rgba(179, 117, 195, 0.5) 50%, rgba(167, 107, 205, 0.5) 50%, rgba(167, 107, 205, 0.5) 62.5%, rgba(156, 98, 214, 0.5) 62.5%, rgba(156, 98, 214, 0.5) 75%, rgba(144, 88, 224, 0.5) 75%, rgba(144, 88, 224, 0.5) 87.5%, rgba(133, 79, 233, 0.5) 87.5%, rgba(133, 79, 233, 0.5) 100%), linear-gradient(152deg, #df7a0a 0%, #df7a0a 12.5%, #cf6a17 12.5%, #cf6a17 25%, #bf5923 25%, #bf5923 37.5%, #af4930 37.5%, #af4930 50%, #9e383d 50%, #9e383d 62.5%, #8e284a 62.5%, #8e284a 75%, #7e1756 75%, #7e1756 87.5%, #6e0763 87.5%, #6e0763 100%);
+}
+
+body section form, html section form {
+  width: 40%;
+  padding: 1% 3px;
+  background-color: white;
+}
+
+body section form .terms, html section form .terms {
+  width: 80%;
+  float: left;
+}
+
+body section form .terms input, body section form .terms p, html section form .terms input, html section form .terms p {
+  float: left;
+}
+
+body section form .terms p, html section form .terms p {
+  width: 80%;
+  margin: 0px;
+  padding: 0px;
+}
+
+body section form .terms input, html section form .terms input {
+  width: 10%;
+}
+
+body section form .terms a, html section form .terms a {
+  color: blue;
+}
+
+body section form .app-left, html section form .app-left {
+  width: 100%;
+  float: left;
+  margin: 3px 0px;
+  padding: 0 1%;
+}
+
+body section form .app-left label, html section form .app-left label {
+  float: left;
+  width: 100%;
+  margin-bottom: 2px;
+}
+
+body section form .app-left input[type='text'], html section form .app-left input[type='text'] {
+  padding: 10px 2px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  width: 90%;
+  margin-bottom: 5px;
+}
+
+body section form .app-left input[type='text']:focus, html section form .app-left input[type='text']:focus {
+  -webkit-box-shadow: 0px 0px 4px #bbb;
+          box-shadow: 0px 0px 4px #bbb;
+}
+
+body section form span, html section form span {
+  width: 100%;
+  height: 30px;
+  float: left;
+}
+
+body section form nav, html section form nav {
+  width: 93%;
+}
+
+body section form nav button, html section form nav button {
+  float: right;
+  padding: 10px 16px;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+}
+
+body section form nav button:hover, html section form nav button:hover {
+  background-color: aqua;
+}
+/*# sourceMappingURL=main.css.map */
